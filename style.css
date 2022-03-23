@@ -1,0 +1,41 @@
+body {
+    background: #eee;
+    font-family: serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 64px;
+}
+
+table {
+    border-spacing:0 15px;
+    margin: 0% 5% 0% 5%;
+    text-align: center;
+    width: 90%;
+}
+
+th {
+    font-size: 18px;
+    background: white;
+}
+
+td {
+    border: 10px solid white;
+    background: white;
+}
+
+#location-cell {
+    width: 15%;
+}
+
+#location-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #0274be;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
