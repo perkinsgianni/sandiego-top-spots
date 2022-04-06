@@ -25,8 +25,8 @@ $(document).ready(function() {
 function initMap() {
     // map, centered at san diego zoo
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 7,
-        center: new google.maps.LatLng(33.09745, -116.99572)
+        zoom: 8,
+        center: new google.maps.LatLng(32.9420, -116.99572)
     });
 
     // markers
