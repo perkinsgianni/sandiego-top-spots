@@ -9,8 +9,8 @@
         "express": "^4.15.3",
         "jquery": "^3.2.1",
         "lodash": "^4.17.4",
-        "mocha": "^5.2.0",
+        "mocha": "^9.2.2",
         "morgan": "^1.8.2",
-        "nightmare": "^2.10.0"
+        "nightmare": "^2.8.0"
     }
 }
