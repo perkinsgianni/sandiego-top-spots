@@ -4,7 +4,7 @@ $(document).ready(function() {
     $.getJSON("data.json", function(data) {
         // iterate through top spots 
         data.reverse().forEach((topSpot) => {
-            // deconstruct each spot
+            // destructure each spot
             let {
                 name,
                 description,
