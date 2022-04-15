@@ -26,11 +26,7 @@ $(document).ready(function() {
         });
 
         // add markers
-        for ( var i = 0; i < data.length; i++ ) {
-            addMarker();
-        }
-
-        function addMarker() {
+        for ( let i = 0; i < data.length; i++ ) {
             let latLng = { lat: data[i].location[0], lng: data[i].location[1] };
             let description = data[i].description;
 
@@ -38,7 +34,7 @@ $(document).ready(function() {
                 position: latLng,
                 map: map,
                 title: description
-            });
+            })
         }
     });
 });
