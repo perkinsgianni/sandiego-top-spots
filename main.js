@@ -8,14 +8,14 @@ $(document).ready(function() {
             let {
                 name,
                 description,
-                location: [lat, lon]
+                location: [lat, lng]
             } = topSpot;
 
             // create table row for each spot
             $("#topSpots").after(
                 `<tr><td>${name}</td>
                      <td>${description}</td>
-                     <td id="location-cell"><a href="https://www.google.com/maps?q=${lat},${lon}"><button id="location-button">Open in Google Maps</button></a></td></tr>`
+                     <td id="location-maps"><a href="https://www.google.com/maps?q=${lat},${lng}"><button id="location-button">Open in Google Maps</button></a></td></tr>`
             )
         });
         
@@ -36,5 +36,13 @@ $(document).ready(function() {
                 title: description
             })
         }
+
+        // get current location
+        // if ( navigator.geolocation ) {
+        //     navigator.geolocation.getCurrentPosition((position) => {
+        //         document.getElementById("pos1").innerHTML=position.coords.latitude;
+        //         document.getElementById("pos2").innerHTML=position.coords.longitude;
+        //     })
+        // }
     });
 });
